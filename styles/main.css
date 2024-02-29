@@ -1,0 +1,109 @@
+.main-background {
+  background-color: rgb(213, 188, 236);
+}
+
+.image-background {
+  background-color: lightsalmon;
+  padding: 20px;
+}
+
+.profile-pic {
+  display: block;
+  margin: 0 auto;
+  border-color: rgb(209, 112, 77);
+  border-width: 10px;
+  border-style: solid;
+  border-radius: 50%;
+}
+
+.h1-background {
+  background-color: rgb(213, 188, 236);
+  margin-top: -40px;
+  margin-bottom: -40px;
+}
+.h1-style {
+  font-family: Impact, sans-serif;
+  font-size: 50px;
+  color: rgba(206, 158, 95, 0.884);
+  padding: 10px 10px 10px 10px;
+  text-align: center;
+}
+
+.p1-background {
+  background-color: lightsalmon;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.p1-style {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+.about-me-div {
+  border-color: salmon;
+  border-style: solid;
+  border-width: 20px;
+  border-radius: 20px;
+  margin-right: 1200px;
+  margin-top: 50px;
+}
+
+.about-me-header {
+  color: rgba(56, 0, 109, 0.884);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 30px;
+  text-align: left;
+  padding-left: 40px;
+}
+.about-me {
+  color: rgba(56, 0, 109, 0.884);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  text-align: left;
+  padding-left: 40px;
+}
+
+.blog-div {
+  border-color: salmon;
+  border-style: solid;
+  border-width: 20px;
+  border-radius: 20px;
+  margin-right: 1200px;
+  margin-top: 50px;
+}
+
+.blog-header {
+  color: rgba(56, 0, 109, 0.884);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 30px;
+  text-align: left;
+  padding-left: 40px;
+  padding-bottom: 0px;
+}
+
+.blog-para {
+  padding-bottom: 30px;
+}
+
+.blog-link1 {
+  color: red;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  text-align: left;
+  padding-left: 50px;
+  padding-bottom: 5px;
+}
+
+.bloglink {
+  color: red;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  text-align: left;
+  padding-left: 50px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
