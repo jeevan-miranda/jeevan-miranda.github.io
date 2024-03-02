@@ -3,6 +3,70 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title></title>
-    <link rel="stylesheet" type="text/css" href="main.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/main.css" />
   </head>
+
+  <body class="tech-background">
+    <div>
+      <h1 class="tech-header">Positioning</h1>
+    </div>
+
+    <div class="tech-div">
+      <button class="tech-button">position: relative</button>
+      <div class="tech-para">
+        <p>
+          The property 'position: relative' sets the positioning of an element
+          relative ot it's normal position in the flow of the webpage. Setting
+          the top, bottom right or left properties will adjust the offset the
+          element from it's normal position.
+        </p>
+        <p>
+          An analogy for relative positioning would be like moving a pawn chess
+          peice two pieces forward on a chess board. When moving the piece, the
+          squares moved is counted relative to where the pawn is currently
+          located.
+        </p>
+      </div>
+    </div>
+
+    <div class="tech-div">
+      <button class="tech-button">position: absolute</button>
+      <div class="tech-para">
+        <p>
+          The property 'position: absolute' sets the element's position relative
+          to the nearest ancestor (the positioned ancestor is the closes
+          ancestor other than 'position: static')
+        </p>
+        <p>
+          Absolute positioned elements are removed from the normal flow of the
+          webpage and can overlap with other elements.
+        </p>
+        <p>
+          An analogy for fixed positioning would be moving a chess piece to a
+          specific position on the chess board, eg moving the bishop to B4. The
+          position is determined by the coordinates on the board regardless of
+          where other pieces are located.
+        </p>
+      </div>
+    </div>
+
+    <div class="tech-div">
+      <button class="tech-button">position: fixed</button>
+      <div class="tech-para">
+        <p>
+          'property: fixed' elements are positioned relative to the viewport,
+          meaning that they will stay in the same place even if the page is
+          scrolling. This is especially useful if you want to have an index
+          displayed on a webpage that will continue to appear in the same
+          position regardless of how far down a page a user scrolls.
+        </p>
+        <p>
+          An analogy that illustrates how fixed positioning works would be like
+          glueing a chess piece to a square on the chessboard. It doesn't matter
+          how the other pieces move around, the glued piece is fixed in place
+          regardless of how others are able to be moved.
+        </p>
+      </div>
+    </div>
+  </body>
 </html>
