@@ -4,7 +4,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title></title>
     <link rel="stylesheet" type="text/css" href="../styles/main.css" />
-    <script src="../java/jsfund.js"></script>
   </head>
 </html>
 
@@ -13,38 +12,194 @@
     <h1 class="tech-header">Javascript Fundamentals</h1>
   </div>
 
-  <div>
+  <div class="tech-div">
+  <div id="header" class="techsubhead">
     <h3>What is Javascript?</h3>
-    <p>Javascript is a coding language that makes web pages interactable. It can give buttons and writeable text boxes functionality by    causing changes in the webpage when users interact with those webpage elements.<br>
+  </div>
+  <div id="text">
+    <p class="tech-para-js">Javascript is a coding language that makes web pages interactable. It can give buttons and writeable text boxes functionality by    causing changes in the webpage when users interact with those webpage elements.<br>
     It also allows for other dynamic features like videos, slideshows and animated graphics	to be implemented in a webpage.
     </p>
-    <h3>How does it relate to HTML and CSS</h3>
-    <p>
+    <h3 class="techsubhead">How does it relate to HTML and CSS</h3>
+    <p class="tech-para-js">
       HTML, CSS and Javascript work togeether to make the foundation of web development.
-      <ul>
+      <ul class="tech-para-js">
       <li>HTML contains all of the headers, text any any images you want to display in the webpage.</li>
       <li>CSS controls how the page looks, such as modifying fonts, background colors and where each HTML element sits on the webpage.</li>
       <li>Javascript makes the webpage come alive by letting users engage with the different elements of your webpage.</li>
     </ul>
     </p>
-    <p>
+    <p class="tech-para-js">
       An analogy that best describes the relationship would be that of kitchen:<br>
       HTML is the language that would determine what applicances and furniture would be in the kitchen<br>
       CSS would then work to arrange the design of the kitchen, detemining where applicances like the fridge and toaster should be placed, and also deciding what colour the kitchen tiles should be. Overall it works to make the kitchen look pretty.<br>
       Javascript would then be the language that makes all the appliances in the kitchen work, e.g making sure that the toaster is plugged in so that when a user presses down on the toaster handle, it starts the heating element.
     </p>
   </div>
+  </div>
 
+  <div class="tech-div">
+  <div id="header" class="techsubhead">
+    <h3>Control Flows</h3>
+  </div>
   <div>
-    <h3>Control flows and loops</h3>
-    <h3>Control Flow</h3>
-    <p>Control flow allows our code to make decisions on what code is executed and when. It allows developers to specify what parts of thecode are run and under what conditions.<br>
+    <p class="tech-para-js">Control flow allows our code to make decisions on what code is executed and when. It allows developers to specify what parts of thecode are run and under what conditions.<br>
     The easiest way to understand how a control flow works is by looking at a flowchart. When following a flowchart, each decision can lead to a different outcome as it determines what decision or outcome comes next. Similarly, control flow allows developers to set conditions that need to be met for the code to execute to achieve the appopriate outcome.
     </p>
-    <h3>Conditional statements:</h3>
-    <p>Conditional statements are basically checks to see if a certain condition is either true or false. If a condition is true the run code A, it it's false run code B. For example in the flowchart Fig.1 the question Is it alive? has two possible answers and then if the condition is true (yes) it runs code A (which triggers the next condition 'Should it be moving'), or false (no) it runs code B (providing outcome "Don't hit it").
+    <h4 class="techsubhead">Conditional statements:</h4>
+    <p class="tech-para-js">Conditional statements are basically checks to see if a certain condition is either true or false. If a condition is true the run code A, it it's false run code B. For example in the flowchart Fig.1 the question Is it alive? has two possible answers and then if the condition is true (yes) it runs code A (which triggers the next condition 'Should it be moving'), or false (no) it runs code B (providing outcome "Don't hit it").
     </p>
-    <img src="https://jeevan-miranda.github.io/styles/Fig1.jpg" width="400" height="800" alt="Fig.1">
-
+    <img src="https://jeevan-miranda.github.io/styles/Fig1.jpg" width="600" height="800" alt="Fig.1">
   </div>
+  </div>
+
+  <div class="tech-div">
+  <div>
+    <h3 class="techsubhead">Loops</h3>
+  </div>
+ <div>
+    <p class="tech-para-js">
+      Loops are a form of conditional statement that repeats a task until the condition required has been met.<br>
+      The flowchart to the right displays an illustration of a loop. In this illustration, we're trying to boil water. After initiating the loop, it will start the task "wait 2 minutes" then check if the water has reached 85°C. If the condition hasn't been met yet, it then repeats the task to wait another two minutes and checks if the water has met the condition (reached 85°C). It will keep repeating the task until the condition is met. If it has reached that temperature, the loop ends.
+    </p>
+    <p class="tech-para-js">The For loop is an extremely common type of loop structure. It allows for a task to be repeated until the conditions set in the loop have been met.</p>
+    <p class="tech-para-js">Syntax:</p>
+    <p class="techcodebackground">
+    <code class="techcodepara">for (initialExpression; condition; updateExpression) {<br>
+      // for loop body<br>
+    }
+    </code>
+    </p>
+    <p class="tech-para-js">
+      <code class="techcodeline">for</code> refers to the conditional loop statement<br>
+      <code class="techcodeline">initialExpression</code> is the inital variable from which the execution of the loop begins<br>
+      <code class="techcodeline">condition</code> is where the conditions that need to be met are written<br>
+      <code class="techcodeline">updateExpression</code> is where the initial variable is increased or decreased.
+    </p>
+    <P class="tech-para-js">
+      When executed, the control moves to the updateExpression and gets updated and then moves to the condition. If the updated variable doesn't meet the condition the loop will continue until the updated variable meets the condition.
+    </P>
+    <div>
+      <img src="https://jeevan-miranda.github.io/styles/Fig2.jpg" width="600" height="800" alt="Fig.2">
+    </div>
+    </div>
+  </div>
+
+  <div class="tech-div">
+  <div class="techsubhead">
+    <h3>The Document Object Model (Dom)</h3>
+  </div>
+  <div>
+    <p class="tech-para-js">
+      The DOM is a javascript object that represents the page you see in the web browser. When you make changes to the javascript model in the DOM, it will automatically update your web browser page.<br>
+      When a webpage is loaded, the browser constructs the webpage HTML as a javascript object in the DOM, and structures the elements in a tree-like representation. The DOM can be then be used to find specific elements within the document, and then manipulate it using Javascript to change it.
+    </p>
+  </div>
+  </div>
+
+  <div class="tech-div">
+    <div class="techsubhead">
+    <h3>Arrays</h3>
+    </div>
+    <div>
+    <p class="tech-para-js">
+      An array is an ordered collection or list of values stored within a single variable. each value in an array is numbered, where the first value in the array is numbered 0, the second value is numbered 1, the thrid value is numbered 2 and so on.
+    </p>
+    <p class="tech-para-js">
+      To declare an array, you can use the syntax:
+    </p>
+    <p class="techcodebackground">
+      <code class="techcodepara">
+        let arrayName = [value1, value2, value 3, etc...]
+      </code>
+    </p>
+    <p class="tech-para-js">
+      You can access a specific value from the array using the number assigned to the value in the array<br>
+      <br>
+      For example:
+    </p>
+    <p class="techcodebackground">
+      <code class="techcodepara">
+        //create an array<br>
+        let sweets = ["lollipop", "liquorice", "sherbet"]<br>
+        <br>
+        //access the array element using console.log<br>
+        console.log(sweets[0])
+      </code>
+    </p>
+    <p id="arrayResult" class="tech-para-js"></p>
+    <p class="tech-para-js">
+      As mentioned before, as the first value in our array is numbered 0, searching for this value number when console logging will return the value name from the array.
+    </p>
+  </div>
+  </div>
+
+  <div class="tech-div">
+    <div class="techsubhead">
+     <h3>Objects</h3>
+    </div>
+    <div>
+     <p class="tech-para-js">
+      An object is a collection of related properties or methods (functions that belong to an object). Within the object, all the properties and methods are stored, and to access an object property in the DOM, a user can access the object property name to access the information entered in that property
+     </p>
+     <p class="tech-para-js">
+      To declare an object, you can use the syntax:
+     </p>
+     <p class="techcodebackground"> 
+      <code class="techcodepara">
+        let car = {<br>
+          make: "toyota"<br>
+          model: "camry"<br>
+          color: "blue"<br>
+        }
+      </code>
+     </p>
+     <p class="tech-para-js">
+      In the example above, the make, model and color are all properties, and 'toyota', 'camry', 'blue' are all values assigned to each property.<br>
+      <br>
+      To then access a property value, you can use the property name in the console log
+     </p>
+     <p class="techcodebackground">
+      <code class="techcodepara">//access the object element using console.log<br>
+      console.log(car.make)
+      </code>
+    </p>
+    <p id="objectResult" class="tech-para-js"></p>
+   </div>
+  </div>
+
+  <div class="tech-div">
+    <div class="techsubhead">
+    <h3>Functions</h3>
+    </div>
+    <div>
+     <p class="tech-para-js">
+      Functions arem a section of re-useable code. It's useful for performing specific tasks at different stages of a webpage.<br>
+      Once you declare a function, it can be used whenever you want by calling the function.
+     </p>
+     <p class="tech-para-js">
+      An easy way to think of it would be like setting up a shortcut key on your computer for a video game. Once you set up the shortcut, each time you press the shortcut key (calling the function) it accesses the menu or item in the videogame, saving you have to navigate manually.
+     </p>
+     <p class="tech-para-js">
+      To declare a function, you can use the 'function' keyword followed by the function name and then () brackets. For example:
+     </p>
+     <p class="techcodebackground">
+      <code class="techcodepara">
+        //function to add two numbers when called//
+        <br>
+        function add(x, y) {<br>
+        let result = x + y<br>
+        return result<br>
+        }
+      </code>
+     </p>
+     <p class="tech-para-js">Note in this example, person and age are parameters set within the parenthesis.</p>
+     <p class="tech-para-js">
+      To call a function, you then need to enter the function name, followed by the arguments you want to assign to the parameters. e.g<br>
+      <code class="techcodeline">add(2, 3)</code>
+     </p>
+     <p id="functionResult" class="tech-para-js"></p>
+   </div>
+  </div>
+  <script src="../java/jsfund.js"></script>
 </body>
