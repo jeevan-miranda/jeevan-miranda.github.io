@@ -1,16 +1,13 @@
-//HIDE PARAS IN HEADER/
+// This function below reveals hidden paras when clicking on title//
 
-//retreive header from id header//
-//let header = document.getElementById('header')
-//let text = document.getElementById('text')
+document.body.addEventListener('click', (ev) => {
+  const isExpandableTitle = !!ev.target.closest('.expandable-title-bar')
+  const expandable = ev.target.closest('.expandable')
 
-//ADD CLICK EVENT AND SPECIFY IF STATEMENT CONDITIONS//
-//header.addEventListener('click', function () {
-//if (text.classList.contains('hidden')) {
-//text.classList.remove('hidden')
-//} else {
-//text.classList.add('hidden')
-//}
-//})
+  if (!isExpandableTitle) {
+    return
+  }
+  expandable.classList.toggle('expandable-open')
+})
 
-//STRETCH FOR SELF LEARNING - figure out how to use a forEach function to set up the function above for multiple headers. Currently I can't get it to work as when clicking one header it hides all the texts as they all have the same id
+//
